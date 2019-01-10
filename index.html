@@ -88,39 +88,79 @@ $utm =  $_SERVER["QUERY_STRING"];
     <div class="container">
       <div class="offer"> 
         <div class="offer__text start-animate">Рассчитаем паспорт водного хозяйства<br>для предприятий и заводов</div>
-        <div style="animation-delay: .2s" class="offer__action order start-animate">Записаться на консультацию </div>
+        <!--.offer__action.order.start-animate(style="animation-delay: .2s") Записаться на консультацию -->
+        
       </div>
     </div>
   </div>
-  <div class="container">
-    <div class="triggers">
+  <div class="formm">
+    <div class="container">
+      <div class="formm__title">Записаться на бесплатный выезд инженера-проектировщика
+      </div>
+      <div class="form">
+        <form class="ajax">
+          <input placeholder="Введите Ваше имя" name="name" class="input input_type_name"/>
+          <input placeholder="Введите Ваш телефон" name="phone" class="input input_type_phone"/>
+          <input placeholder="Введите Ваш E-mail" name="email" class="input input_type_email"/>
+          <input type="hidden" name="url" value="&lt;?echo $url?&gt;"/>
+          <input type="hidden" name="utm" value="&lt;?echo $utm?&gt;"/>
+          <input type="hidden" name="utm_term" value="&lt;?echo $utm_term?&gt;"/>
+          <input type="hidden" name="utm_campaign" value="&lt;?echo $utm_campaign?&gt;"/>
+          <input type="hidden" name="utm_source" value="&lt;?echo $utm_source?&gt;"/>
+          <input type="hidden" name="utm_medium" value="&lt;?echo $utm_medium?&gt;"/>
+          <input type="hidden" name="utm_content" value="&lt;?echo $utm_content?&gt;"/>
+          <input type="hidden" name="order" value="Паспорт водного хозяйства. Выезд инженера"/>
+          <input type="submit" value="Отправить" class="form__btn"/>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="triggers">
+    <div class="container">
       <div class="row">
-        <div class="col col_lg_2 col_md_2 col_sm_6 col_xs_12">
+        <div class="col col_lg_4 col_md_4 col_sm_6 col_xs_12">
           <div class="triggers__items"></div><img src="img/triggers__img1.png" class="triggers__img"/>
           <div class="triggers__text">Опыт работы<br>более 6 лет</div>
         </div>
-        <div class="col col_lg_2 col_md_2 col_sm_6 col_xs_12">
+        <div class="col col_lg_4 col_md_4 col_sm_6 col_xs_12">
           <div class="triggers__items"></div><img src="img/triggers__img7.png" class="triggers__img"/>
           <div class="triggers__text">Имеем право участия<br> в конкурсах, СРО</div>
         </div>
-        <div class="col col_lg_3 col_md_3 col_sm_6 col_xs_12">
+        <div class="col col_lg_4 col_md_4 col_sm_6 col_xs_12">
           <div class="triggers__items"></div><img src="img/triggers__img5.png" class="triggers__img"/>
-          <div class="triggers__text">Гарантируем принятия<br>паспорта Водоканалом! </div>
+          <div class="triggers__text">Гарантируем принятие<br>паспорта Водоканалом </div>
         </div>
-        <div class="col col_lg_4 col_lg-offset_1 col_md_4 col_sm_12 col_xs_12">
-          <div class="about">ООО «БК Инвент» — общество профессионалов, использующих в своей практике инновационный подход к решению как проектных, так и инженерно-строительных задач.</div>
+        <div class="col col_lg_4 col_md_4 col_sm_6 col_xs_12 col_lg-offset_2 col_md-offset_2">
+          <div class="triggers__items"></div><img src="img/triggers__img3.png" class="triggers__img"/>
+          <div class="triggers__text">Сдали более 30<br>паспортов водного<br>хозяйства в Водоканал</div>
+        </div>
+        <div class="col col_lg_4 col_md_4 col_sm_6 col_xs_12">
+          <div class="triggers__items"></div><img src="img/triggers__img2.png" class="triggers__img"/>
+          <div class="triggers__text">Большой опыт работы <br>с муниципальными организациями </div>
         </div>
       </div>
     </div>
   </div>
   <div class="textt">
     <div class="container">
-      <div class="textt__title">Что такое паспорт водного хозяйства? 
+      <div class="textt__title">Что такое паспорт водного хозяйства
       </div>
       <div class="textt__text"> 
         <p>Паспорт водного хозяйства — это один из основных нормативно-технических документов компании, позволяющий осуществлять учет количества и состава производственных сбросов в систему канализации. В нем содержатся данные о том, к аким образом предприятие использует находящиеся в его распоряжении водные ресурсы, а также определяется степень воздействия деятельности компании на окружающую среду.</p>
         <p>Срок действия документа — 5 лет</p>
       </div>
+    </div>
+  </div>
+  <div class="docc">
+    <div class="docc__container">
+      <div class="docc__title">Документы для изготовления Водохозяйственного паспорта?
+      </div>
+      <p>1. Копии правоустанавливающих документов</p>
+      <p>2. Копия технического паспорта БТИ</p>
+      <p>3. Заполненная информационная справки</p>
+      <p>4. Копия топографической съемки </p>
+      <div class="docc__text">Далее после обследования проектировщиком Вашего объекта, он запросит необходимую техническую документацию на оборудование, технологии, если такие имеют место быть. 
+      </div><b>Топографическую съемку можете заказать в БК Инвент! </b>
     </div>
   </div>
   <div class="stock">
